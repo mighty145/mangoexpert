@@ -1,0 +1,92 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 80px;
+}
+
+.hero-background {
+  background: linear-gradient(
+    135deg,
+    rgba(45, 80, 22, 0.9),
+    rgba(26, 48, 9, 0.8)
+  ),
+  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path fill="%23f4c430" opacity="0.1" d="M0,300L50,320C100,340,200,380,300,390C400,400,500,380,600,350C700,320,800,280,900,270C1000,260,1100,280,1150,290L1200,300V600H1150C1100,600,1000,600,900,600C800,600,700,600,600,600C500,600,400,600,300,600C200,600,100,600,50,600H0Z"/></svg>');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: white;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #f4c430;
+  font-weight: 600;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: #f4c430;
+  color: #2d5016;
+  padding: 15px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background: #e6b41f;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

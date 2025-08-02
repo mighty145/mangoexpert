@@ -1,0 +1,145 @@
+.testimonials {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+}
+
+.testimonials-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e9ecef;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.avatar {
+  font-size: 3rem;
+  background: #f4c430;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.client-info h4 {
+  margin: 0 0 0.25rem 0;
+  color: #2d5016;
+  font-size: 1.2rem;
+}
+
+.location {
+  margin: 0 0 0.25rem 0;
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.farm-info {
+  margin: 0;
+  color: #888;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.rating {
+  margin-bottom: 1rem;
+}
+
+.star {
+  font-size: 1.2rem;
+  margin-right: 0.25rem;
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  position: relative;
+  padding-left: 1rem;
+  border-left: 3px solid #f4c430;
+}
+
+.testimonials-cta {
+  text-align: center;
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.testimonials-cta h3 {
+  color: #2d5016;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.testimonials-cta p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.testimonials-cta .btn {
+  font-size: 1.1rem;
+  padding: 15px 35px;
+}
+
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .testimonial-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 2.5rem;
+  }
+  
+  .testimonials-cta {
+    padding: 2rem 1rem;
+  }
+  
+  .testimonials-cta h3 {
+    font-size: 1.5rem;
+  }
+}
