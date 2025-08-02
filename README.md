@@ -2,6 +2,8 @@
 
 A professional React-based static website for a retired professor and mango agriculture consultant. This website showcases expertise in mango farming and provides a platform for potential clients to connect for consultation services.
 
+**🌐 Live Website: [https://mighty145.github.io/mangoexpert/](https://mighty145.github.io/mangoexpert/)**
+
 ## 🌟 Features
 
 - **Modern Responsive Design** - Optimized for all devices and screen sizes
